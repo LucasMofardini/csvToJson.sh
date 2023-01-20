@@ -1,3 +1,3 @@
-# Learning make a scrit in sh
+# Learning make a script in sh
 ____
 
