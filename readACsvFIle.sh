@@ -2,9 +2,10 @@
 # Purpose: Read Comma Separated CSV File
 # Author: Vivek Gite under GPL v2.0+
 # ------------------------------------------
-echo "Qual é o arquivo que voce quer parsear ? "
-read FILE_PATH
-INPUT=$FILE_PATH
+# echo "Qual é o arquivo que voce quer parsear ? "
+# read FILE_PATH
+# INPUT=$FILE_PATH
+INPUT=example.csv
 if [ ! -f $INPUT ] 
     then 
     echo "$INPUT file not found"
@@ -13,6 +14,7 @@ fi
 echo "Qual é o separador do csv? "
 read separator
 IFS="$separator"
+echo $INPUT
 while read name date phone isUgly
 do
 	echo "Nome : $name"
